@@ -14,8 +14,8 @@ In the past, I have worked on:
 
 ### Work
 
-| 2020 April - Present | ML Engineer @ [ML6](https://ml6.eu) | AI in production, Consultancy |
-| 2019 June - December | Data Scientist @ [Teraki](https://www.teraki.com) | Point Clouds, Data Compression |
+| 2020/04 - Present | ML Engineer @ [ML6](https://ml6.eu) | AI in production, Consultancy |
+| 2019/06 - 12 | Data Scientist @ [Teraki](https://www.teraki.com) | Point Clouds, Data Compression |
 
 ### Education
 
