@@ -3,7 +3,7 @@ layout: post
 title: Reducing crop losses caused by spring frost
 subtitle: An overview of our recently published article
 #cover-img: /assets/img/frost_vincent_fan.jpg
-thumbnail-img: /assets/frost_vincent_fan.jpg
+thumbnail-img: /assets/img/frost_vincent_fan.jpg
 share-img: /assets/img/frost_vincent_fan.jpg
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
@@ -24,7 +24,7 @@ Extreme measures are taken to combat the effects of these frost events. This is 
 
 This method has been in use for over 50 years and has been studied widely. Our research aimed to get a better physics-based understanding by combining high-resolution 3D simulations and improved temperature measurement methods. An example of such a simulation is shown here. The turbulent downward flow created by the wind machine is visualized as it makes a 360-degree turn. The domain size is 700 m cubed.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tDZ4bQSpopU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/tDZ4bQSpopU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 If you want all the details and our findings, the open-access article can be found [here](https://doi.org/10.1016/j.agrformet.2019.107868).
 
