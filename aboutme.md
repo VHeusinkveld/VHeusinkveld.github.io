@@ -8,8 +8,8 @@ I like to solve problems, learn, and make a difference. My background is in Appl
 
 In the past, I have worked on:
 - Point cloud compression algorithms @ [Teraki](https://www.teraki.com)
-- [Fruit frost mitigation](doi.org/10.1016/j.agrformet.2019.107868)
-- [Medical imaging](tinyurl.com/BScThesisMedicalImaging)
+- [Fruit frost mitigation](http://www.doi.org/10.1016/j.agrformet.2019.107868)
+- [Medical imaging](http://resolver.tudelft.nl/uuid:5befdae2-9636-4e92-bd75-9c516ae20726)
 
 
 ### Work
