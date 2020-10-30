@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Vincent Heusinkveld
+title: Under Construction
 
 # Your name to show in the footer
 author: Vincent Heusinkveld
@@ -16,7 +16,7 @@ author: Vincent Heusinkveld
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - test: "https://tweakers.net"
+    - Example: "https://"
 
 # --- Logo --- #
 
@@ -37,31 +37,31 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+#  email: "someone@example.com"
+#  facebook: deanattali
+  github: https://github.com/VHeusinkveld
+  twitter: https://twitter.com/Vincent_XCVI
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: https://www.linkedin.com/in/vincentheusinkveld/
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
+#  snapchat: -
+#  instagram: -
+  youtube: https://www.youtube.com/user/1maart1996
+#  spotify: -
+#  telephone: -
+#  steam: -
+#  twitch: -
+#  yelp: -
+#  telegram: -
+#  calendly: -
+#  mastodon: -
+#  ORCID: -
+#  google-scholar: -
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Physics, AI and Data Science
 
 # --- General options --- #
 
