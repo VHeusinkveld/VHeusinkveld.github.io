@@ -2,9 +2,9 @@
 layout: post
 title: Reducing crop losses caused by spring frost
 subtitle: An overview of our recently published article
-#cover-img: /assets/img/frost_vincent_fan.jpg
-thumbnail-img: /assets/img/frost_vincent_fan.jpg
-share-img: /assets/img/frost_vincent_fan.jpg
+#cover-img: /assets/img/frost_fan_vincent.jpg
+thumbnail-img: /assets/img/frost_fan_vincent.jpg
+share-img: /assets/img/frost_fan_vincent.jpg
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
 tags: [physics]
