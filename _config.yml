@@ -16,7 +16,7 @@ author: Vincent Heusinkveld
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Example: "https://www.nos.nl"
+    - Book Notes: "https://github.com/VHeusinkveld/book_notes"
 
 # --- Logo --- #
 
