@@ -18,5 +18,5 @@ In the past, I have worked on:
 
 ### Education
 
-| 2019 | MSc. *cum laude* Applied Physics |
-| 2017 | BSc. Applied Physics |
+| 2019 | MSc *cum laude* Applied Physics |
+| 2017 | BSc Applied Physics |
