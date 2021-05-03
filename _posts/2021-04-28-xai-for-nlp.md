@@ -2,7 +2,7 @@
 layout: post
 title: Interpreting the algorithms that determine your future
 subtitle: Shap for HuggingFace Transformers
-cover-img: /assets/img/2104_interpretable_nlp_model.png
+#cover-img: /assets/img/2104_interpretable_nlp_model.png
 thumbnail-img: /assets/img/2104_interpretable_nlp_model.png
 share-img: /assets/img/2104_interpretable_nlp_model.png
 gh-repo: VHeusinkveld/quick-tips
@@ -10,6 +10,8 @@ gh-badge: [star, fork, follow]
 tags: [interpretable, machine learning, quicktip]
 comments: true
 ---
+
+![2 cv pipelines, one returning a yes/no answer, the other also returning a highlighted cv](/assets/img/2104_interpretable_nlp_model.png){: .mx-auto.d-block :}
 
 Imagine this, you are a software engineer 👩‍💻 that just applied for a senior position at Ai Inc. As the name might imply, an automated ‘BERT’ black-box solution is used to screen your CV. 
 
