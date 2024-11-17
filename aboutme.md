@@ -14,6 +14,7 @@ In the past, I have worked on:
 - Medical imaging, tinyurl.com/BScThesisMedicalImaging
 
 ### Work
+
 | 2021 - Present | Data Scientist @ BlockTech | Trading, quantitative finance |
 | 2020 - 2021 | ML Engineer @ [ML6](https://ml6.eu) | ML in production, Consultancy |
 | 2019 | Data Scientist @ [Teraki](https://www.teraki.com) | Point Clouds, Data Compression |
