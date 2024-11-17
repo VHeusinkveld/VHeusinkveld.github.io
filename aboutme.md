@@ -4,16 +4,18 @@ title: About me
 #subtitle: 
 ---
 
-I like to solve complex problems, learn, and make a difference. My background is in Applied Physics in which I obtained my masters' degree cum laude at Delft University of Technology. Currently, I am applying my skills in the field of Artificial Intelligence @ [ML6](https://ml6.eu).
+I am a Data Scientist at BlockTech where I combine finance and data science with my quantitative background. I like to solve complex problems, learn, and make a difference. My background is in Applied Physics in which I obtained my masters' degree, cum laude, at the Delft University of Technology.
 
 In the past, I have worked on:
-- Point cloud compression for autonomous vehicles@ [Teraki](https://www.teraki.com)
-- [Fruit frost mitigation](http://www.doi.org/10.1016/j.agrformet.2019.107868), experimental, CFD modelling and published article
-- [Medical imaging](http://resolver.tudelft.nl/uuid:5befdae2-9636-4e92-bd75-9c516ae20726), ultrasound transducers
+- Faulty chip prediction @ ASML
+- Machine learning solution consultant using the Google Cloud @ ML6
+- Point cloud compression for autonomous vehicles @ Teraki
+- Fruit frost mitigation, published: doi.org/10.1016/j.agrformet.2019.107868
+- Medical imaging, tinyurl.com/BScThesisMedicalImaging
 
 ### Work
-
-| 2020 - Present | ML Engineer @ [ML6](https://ml6.eu) | ML in production, Consultancy |
+| 2021 - Present | Data Scientist @ BlockTech | Trading, quantitative finance |
+| 2020 - 2021 | ML Engineer @ [ML6](https://ml6.eu) | ML in production, Consultancy |
 | 2019 | Data Scientist @ [Teraki](https://www.teraki.com) | Point Clouds, Data Compression |
 
 ### Education
