@@ -224,6 +224,8 @@ exclude:
   - screenshot.png
   - docs/
   - tests/
+  - vendor/
+  - .bundle/
 
 plugins:
   - jekyll-paginate
