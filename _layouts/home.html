@@ -1,105 +1,41 @@
 ---
-layout: page
+layout: base
 ---
-
-{{ content }}
-
-{% assign posts = paginator.posts | default: site.posts %}
-
-<div class="posts-list">
-  {% for post in posts %}
-  <article class="post-preview">
-
-    {%- capture thumbnail -%}
+<section class="hero shell" aria-labelledby="intro-title">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ site.rss-description | escape }}</p>
+    <h1 id="intro-title">{{ site.title | escape }}</h1>
+    <p class="hero-intro">I am a Data Scientist at BlockTech where I combine finance and data science with my quantitative background. I like to solve complex problems, learn, and make a difference. My background is in Applied Physics in which I obtained my masters' degree, cum laude, at the Delft University of Technology.</p>
+    <div class="hero-links">
+      <a class="button" href="#writing">Explore my writing <span aria-hidden="true">↓</span></a>
+      <a class="text-link" href="{{ '/aboutme' | relative_url }}">More about me <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <figure class="hero-image">
+    <img src="{{ '/assets/img/frost_fan_vincent.jpg' | relative_url }}" alt="Vincent climbing a wind machine during frost protection field research" width="500" height="500" fetchpriority="high">
+  </figure>
+</section>
+<section id="writing" class="writing shell" aria-labelledby="writing-title">
+  <div class="section-heading"><div><h2 id="writing-title">Writing</h2></div><a class="text-link" href="{{ '/tags' | relative_url }}">Browse topics <span aria-hidden="true">→</span></a></div>
+  {{ content }}
+  {% assign posts = paginator.posts | default: site.posts %}
+  <div class="posts-grid">
+    {% for post in posts %}
+    <article class="writing-card">
       {% if post.thumbnail-img %}
-        {{ post.thumbnail-img }}
-      {% elsif post.cover-img %}
-        {% if post.cover-img.first %}
-          {{ post.cover-img[0].first.first }}
-        {% else %}
-          {{ post.cover-img }}
-        {% endif %}
-      {% else %}
+      <a class="writing-image{% if post.tags contains 'machine learning' %} diagram-image{% endif %}" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ post.thumbnail-img | relative_url }}" alt="" loading="lazy" width="640" height="400"></a>
       {% endif %}
-    {% endcapture %}
-    {% assign thumbnail=thumbnail | strip %}
-
-    {% if site.feed_show_excerpt == false %}
-    {% if thumbnail != "" %}
-    <div class="post-image post-image-normal">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-      </a>
-    </div>
-    {% endif %}
-    {% endif %}
-
-    <a href="{{ post.url | absolute_url }}">
-      <h2 class="post-title">{{ post.title }}</h2>
-
-      {% if post.subtitle %}
-        <h3 class="post-subtitle">
-        {{ post.subtitle }}
-        </h3>
-      {% endif %}
-    </a>
-
-    <p class="post-meta">
-      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-      Posted on {{ post.date | date: date_format }}
-    </p>
-
-    {% if thumbnail != "" %}
-    <div class="post-image post-image-small">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-      </a>
-    </div>
-    {% endif %}
-
-    {% unless site.feed_show_excerpt == false %}
-    {% if thumbnail != "" %}
-    <div class="post-image post-image-short">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-        <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-      </a>
-    </div>
-    {% endif %}
-
-    <div class="post-entry">
-      {% assign excerpt_length = site.excerpt_length | default: 50 %}
-      {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
-      {% assign excerpt_word_count = post.excerpt | number_of_words %}
-      {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-        <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
-      {% endif %}
-    </div>
-    {% endunless %}
-
-    {% if site.feed_show_tags != false and post.tags.size > 0 %}
-    <div class="blog-tags">
-      <span>Tags:</span>
-      {% for tag in post.tags %}
-      <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-   </article>
-  {% endfor %}
-</div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pagination main-pager">
-  {% if paginator.previous_page %}
-  <li class="page-item previous">
-    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
-  </li>
+      <div class="post-meta"><span>{{ post.tags | first | escape }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time></div>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }} <span class="card-arrow" aria-hidden="true">→</span></a></h3>
+      <p>{{ post.subtitle | default: post.excerpt | strip_html | truncatewords: 36 }}</p>
+      <div class="tags" aria-label="Topics">{% for tag in post.tags %}<a href="{{ '/tags' | relative_url }}#{{ tag | slugify }}">{{ tag | escape }}</a>{% endfor %}</div>
+    </article>
+    {% endfor %}
+  </div>
+  {% if paginator.total_pages > 1 %}
+  <nav class="pagination" aria-label="Writing pages">
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">← Newer writing</a>{% endif %}
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Older writing →</a>{% endif %}
+  </nav>
   {% endif %}
-  {% if paginator.next_page %}
-  <li class="page-item next">
-    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+</section>

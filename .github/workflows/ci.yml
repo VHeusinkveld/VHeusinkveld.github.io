@@ -1,15 +1,24 @@
-name: Beautiful Jekyll CI
+name: Website checks
 on: [push, pull_request]
+permissions:
+  contents: read
 jobs:
   build:
-    name: Build Jekyll
+    name: Build and check Jekyll
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Build the site in the jekyll/builder container
-        run: |
-          export JEKYLL_VERSION=3.8
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          -e PAGES_REPO_NWO=${{ github.repository }} \
-          jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build the site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+      - name: Check pages and local links
+        run: python3 tests/check_site.py _site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website-preview
+          path: _site

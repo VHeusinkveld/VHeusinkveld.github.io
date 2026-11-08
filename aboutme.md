@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-#subtitle: 
+#subtitle:
 ---
 
 I am a Data Scientist at BlockTech where I combine finance and data science with my quantitative background. I like to solve complex problems, learn, and make a difference. My background is in Applied Physics in which I obtained my masters' degree, cum laude, at the Delft University of Technology.
