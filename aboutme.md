@@ -30,4 +30,4 @@ My background is in Applied Physics. I obtained my master's degree, *cum laude*,
   <div><dt>2017</dt><dd>BSc Applied Physics</dd></div>
 </dl>
 
-<a class="text-link" href="https://www.linkedin.com/in/vincentheusinkveld/">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+<a class="text-link" href="https://www.linkedin.com/in/vincentheusinkveld/">Connect on LinkedIn <span aria-hidden="true">→</span></a>

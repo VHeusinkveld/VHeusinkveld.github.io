@@ -15,8 +15,8 @@ layout: base
   </div>
   <div class="article-end">
     <div class="tags" aria-label="Topics">{% for tag in page.tags %}<a href="{{ '/tags' | relative_url }}#{{ tag | slugify }}">{{ tag | escape }}</a>{% endfor %}</div>
-    {% if page.gh-repo %}<a class="text-link" href="https://github.com/{{ page.gh-repo }}">View code on GitHub ↗</a>{% endif %}
-    {% if page.social-share %}<a class="text-link" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}">Share on LinkedIn ↗</a>{% endif %}
+    {% if page.gh-repo %}<a class="text-link" href="https://github.com/{{ page.gh-repo }}">View code on GitHub →</a>{% endif %}
+    {% if page.social-share %}<a class="text-link" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}">Share on LinkedIn →</a>{% endif %}
   </div>
   <nav class="pagination" aria-label="Other articles">
     {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | escape }}</a>{% endif %}
