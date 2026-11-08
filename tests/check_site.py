@@ -6,11 +6,15 @@ import sys
 
 root = Path(sys.argv[1] if len(sys.argv) > 1 else '_site').resolve()
 errors = []
-required = ['index.html', 'aboutme.html', 'tags.html', '404.html', 'feed.xml',
+required = ['index.html', '404.html', 'feed.xml',
             '2020-01-05-frost-paper/index.html', '2021-04-28-xai-for-nlp/index.html']
 for name in required:
     if not (root / name).is_file():
         errors.append(f'Missing preserved route: {name}')
+
+for route in ('aboutme', 'tags'):
+    if not any((root / name).is_file() for name in (f'{route}.html', f'{route}/index.html')):
+        errors.append(f'Missing preserved route: /{route}')
 
 class Page(HTMLParser):
     def __init__(self):
