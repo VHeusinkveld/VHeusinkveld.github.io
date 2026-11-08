@@ -22,7 +22,7 @@ Open `http://localhost:4000`. The design uses local CSS and system fonts; naviga
 - `_config.yml`: site metadata and social profiles.
 - `CNAME`: existing custom domain; keep `hveld.com`.
 
-Post previews use `summary`, falling back to `subtitle` and then the article excerpt. Images use the existing `thumbnail-img` field. Add posts with the same front matter as the existing articles.
+Post previews use the original `subtitle`, falling back to the article excerpt. Images use the existing `thumbnail-img` field. Add posts with the same front matter as the existing articles.
 
 ## Validate
 

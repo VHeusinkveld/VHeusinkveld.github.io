@@ -147,8 +147,8 @@ h1,h2,h3 {
 }
 
 .hero h1 {
-  font-size:clamp(68px,7.4vw,104px);
-  letter-spacing:-5px;
+  font-size:clamp(44px,5.2vw,72px);
+  letter-spacing:-2px;
   line-height:.99;
   margin:24px 0 29px;
 }
@@ -652,7 +652,7 @@ h1,h2,h3 {
     padding-block:60px 70px;
   }
   .hero h1 {
-    font-size:79px;
+    font-size:60px;
   }
   .hero-intro {
     font-size:16px;
@@ -702,8 +702,8 @@ h1,h2,h3 {
     padding-block:46px 55px;
   }
   .hero h1 {
-    font-size:76px;
-    letter-spacing:-4px;
+    font-size:44px;
+    letter-spacing:-1.4px;
     margin-block:20px 24px;
   }
   .hero-intro {
