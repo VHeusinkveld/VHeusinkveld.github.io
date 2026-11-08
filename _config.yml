@@ -7,6 +7,9 @@
 
 # Name of website
 title: Vincent Heusinkveld
+url: "https://hveld.com"
+baseurl: ""
+description: "Physics, machine learning and quantitative finance. Writing and research by Vincent Heusinkveld."
 
 # Your name to show in the footer
 author: Vincent Heusinkveld
@@ -185,7 +188,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Europe/Amsterdam"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -220,6 +223,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - tests/
 
 plugins:
   - jekyll-paginate

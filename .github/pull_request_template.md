@@ -1,5 +1,6 @@
-Please note that if you are trying to update **your** website, this is the wrong place to do so. Please carefully follow the Beautiful Jekyll instructions (found at https://github.com/daattali/beautiful-jekyll#readme) and make sure you submit changes to **your** version of the project.
+Describe the visitor-facing change and why it is needed.
 
-If your intention is to submit a Pull Request, please describe what your pull request achieves.
-
-Thank you!
+Validation:
+- Jekyll production build
+- Local link and accessibility smoke checks
+- Desktop and mobile visual review when applicable

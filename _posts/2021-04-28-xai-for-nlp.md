@@ -2,6 +2,7 @@
 layout: post
 title: Interpreting the algorithms that determine your future
 subtitle: Shap for HuggingFace Transformers
+summary: "A practical look at SHAP for HuggingFace Transformers, and what it takes to turn a black-box prediction into an explanation."
 #cover-img: /assets/img/2104_interpretable_nlp_model.png
 thumbnail-img: /assets/img/2104_interpretable_nlp_model.png
 share-img: /assets/img/2104_interpretable_nlp_model.png
